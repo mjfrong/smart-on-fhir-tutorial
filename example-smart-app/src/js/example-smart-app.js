@@ -28,6 +28,7 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
+          var address = patient.address
 
           var fname = '';
           var lname = '';
@@ -48,6 +49,7 @@
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
           p.gender = gender;
+          p.address = address;
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
@@ -83,6 +85,7 @@
       lname: {value: ''},
       gender: {value: ''},
       birthdate: {value: ''},
+      address: {value: ''},
       height: {value: ''},
       weight: {value: ''},
       eyeColor: {value: ''},
@@ -128,6 +131,7 @@
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
+    $('#address').html(p.address);    
     $('#height').html(p.height);
     $('#weight').html(p.weight);
     $('#eyeColor').html(p.eyeColor);
