@@ -53,7 +53,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          p.weight = weight;
+          p.weight = getQuantityValueAndUnit(weight[0]);
           p.eyeColor = eyeColor;
 
           if (typeof systolicbp != 'undefined')  {
