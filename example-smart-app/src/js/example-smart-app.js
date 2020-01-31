@@ -47,6 +47,7 @@
           var eyeColor = byCodes('67576-9');
 
           var p = defaultPatient();
+          p.id = patient.identifier;
           p.birthdate = patient.birthDate;
           p.gender = gender;
           p.address = address[0].text;
@@ -83,6 +84,7 @@
     return {
       fname: {value: ''},
       lname: {value: ''},
+      id: {value: ''},
       gender: {value: ''},
       birthdate: {value: ''},
       address: {value: ''},
@@ -129,6 +131,7 @@
     $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
+    $('#id').html(p.id);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
     $('#address').html(p.address);    
