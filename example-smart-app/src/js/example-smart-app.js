@@ -133,7 +133,7 @@
     $('#birthdate').html(p.birthdate);
     $('#address').html(p.address);    
     $('#height').html(p.height);
-    $('#weight').html('9000');
+    $('#weight').html(p.weight);
     $('#eyeColor').html(p.eyeColor);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
