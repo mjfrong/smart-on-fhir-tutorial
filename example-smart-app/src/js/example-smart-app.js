@@ -47,7 +47,7 @@
           var eyeColor = byCodes('67576-9');
 
           var p = defaultPatient();
-          p.id = patient.identifier;
+          p.id = patient.identifier[0].type.text + ': ' + patient.identifier[0].value;
           p.birthdate = patient.birthDate;
           p.gender = gender;
           p.address = address[0].text;
